@@ -15,9 +15,7 @@
 
 ## Overview
 
-This project implements a SQL Server Analysis Services (SSAS) cube on top of a healthcare data warehouse modeled using a star schema. The cube allows for multidimensional analysis of healthcare metrics such as patient encounters, costs, payer coverage, and more.
-
-It forms part of a broader DW & BI solution designed from synthetic OLTP healthcare data, transformed and loaded using SSIS.
+This project implements a SQL Server Analysis Services (SSAS) cube on top of a healthcare data warehouse modeled using a star schema. The cube allows for multidimensional analysis of healthcare metrics
 
 ---
 
