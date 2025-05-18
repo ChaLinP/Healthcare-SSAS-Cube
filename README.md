@@ -11,7 +11,7 @@
 
 ## Overview
 
-This project involves designing and implementing a Data Warehousing and Business Intelligence (DW & BI) solution using a healthcare-related OLTP dataset. The aim is to enable efficient analytics and reporting by transforming transactional healthcare data into a star schema model through a structured ETL process.
+This project implements a SQL Server Analysis Services (SSAS) cube on top of a healthcare data warehouse modeled using a star schema. The cube allows for multidimensional analysis of healthcare metrics.
 
 ---
 
