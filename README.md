@@ -42,7 +42,7 @@ The dataset originates from the [Synthea Project](https://synthea.mitre.org/down
 17. Providers  
 18. Supplies
 
-These entities were transformed and loaded into a star schema, and the cube is built over that schema.
+Selected entities were transformed and loaded into a star schema, and the cube is built over that schema.
 
 ---
 
