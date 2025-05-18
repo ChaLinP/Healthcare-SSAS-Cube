@@ -97,7 +97,7 @@ The SSAS cube was implemented using **SQL Server Analysis Services (SSAS) Multid
 
 ---
 
-## 🚀 How to Deploy the Cube
+## How to Deploy the Cube
 
 1. Open **SQL Server Data Tools (SSDT)** or **Visual Studio with SSAS Extensions**.
 2. Clone/download this repo and open the SSAS project solution file.
