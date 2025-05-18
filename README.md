@@ -23,14 +23,24 @@ This project implements a SQL Server Analysis Services (SSAS) cube on top of a h
 
 The dataset originates from the [Synthea Project](https://synthea.mitre.org/downloads), consisting of synthetic healthcare records including:
 
-- Encounters
-- Patients
-- Providers
-- Payers
-- Organizations
-- Claims
-- Medications
-- Immunizations, and more
+1. Allergies  
+2. Patients  
+3. Claims  
+4. Claims Transactions  
+5. Care Plans  
+6. Conditions  
+7. Devices  
+8. Encounters  
+9. Imaging Studies  
+10. Immunizations  
+11. Medications  
+12. Observations  
+13. Organizations  
+14. Payer Transitions  
+15. Payers  
+16. Procedures  
+17. Providers  
+18. Supplies
 
 These entities were transformed and loaded into a star schema, and the cube is built over that schema.
 
