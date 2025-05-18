@@ -1,0 +1,1152 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="eae844b9-352c-4efc-a5b9-055ac80fa698" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DSV_Medical_DW</ID>
+  <Name>DSV_Medical_DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="26" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1280" scrolltop="3381" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="14055" y="10224" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimOrganizations" left="20" top="7400" logicalid="13" controlid="1" masterid="0" hint1="0" hint2="0" width="3323" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fb0c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimOrganizations" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPayers" left="8922" top="14800" logicalid="14" controlid="2" masterid="0" hint1="0" hint2="0" width="4424" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004811000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPayers" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactsEncounters" left="5743" top="7400" logicalid="15" controlid="3" masterid="0" hint1="0" hint2="0" width="4424" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004811000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactsEncounters" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="2564" top="14800" logicalid="16" controlid="4" masterid="0" hint1="0" hint2="0" width="3958" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000760f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPatients" left="6018" top="0" logicalid="17" controlid="5" masterid="0" hint1="0" hint2="0" width="3874" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000220f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPatients" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimProviders" left="12567" top="7400" logicalid="18" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimProviders" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3043" top="9501" logicalid="19" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimOrganizations]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="19" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3343" y="9900" />
+              <point x="5743" y="9900" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9305" top="12100" logicalid="20" controlid="8" masterid="0" hint1="0" hint2="0" width="2229" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimPayers]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="6" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11134" y="14800" />
+              <point x="11134" y="13600" />
+              <point x="9605" y="13600" />
+              <point x="9605" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4694" top="12100" logicalid="21" controlid="9" masterid="0" hint1="0" hint2="0" width="3561" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimDate_StopKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="8" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5093" y="14800" />
+              <point x="5093" y="13600" />
+              <point x="7955" y="13600" />
+              <point x="7955" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9867" top="9501" logicalid="22" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimProviders]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="18" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12567" y="9900" />
+              <point x="10167" y="9900" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7556" top="4501" logicalid="23" controlid="11" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimPatients]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7955" y="5000" />
+              <point x="7955" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3044" top="12100" logicalid="24" controlid="12" masterid="0" hint1="0" hint2="0" width="3561" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEncounter_DimDate]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3443" y="14800" />
+              <point x="3443" y="13600" />
+              <point x="6305" y="13600" />
+              <point x="6305" y="12400" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1280</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3381</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="52ff0e3c-7b2d-4010-a4fe-4a7f13a1bd05">
+      <ID>Facts Encounters</ID>
+      <Name>Facts Encounters</Name>
+      <DimensionID>Facts Encounters</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ff98e08d-0dc0-4130-9fa3-7f1a8c3e0efb">
+          <AttributeID>Encounter SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ac9a3f4-49f8-4299-99f9-022d6ff73257">
+          <AttributeID>Stop Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e94663d1-642c-48e1-9bbe-33800a0a9613">
+          <AttributeID>Organizations SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a7a7a0d0-56f6-48a3-8b76-01cc95327a7a">
+          <AttributeID>Payers SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8387813-3d48-4c9b-aaa8-97604d67dd03">
+          <AttributeID>Providers SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c9f720e1-4b76-4f10-a91f-872bda3bd9b2">
+          <AttributeID>Patients SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c3e8093e-71a1-47c8-a59a-746cf64608e1">
+          <AttributeID>Start Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4211ea53-5aee-46c6-b124-89fb82c00857">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="704b0d71-4745-4ba9-ad36-2b7472b2525c">
+          <AttributeID>Encounter Class</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59938cc4-5de9-4b53-b89b-b2c66f30b4b5">
+          <AttributeID>Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e04c373a-31b6-4b55-b8ec-8ac0764989a8">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3f8ba0a0-f466-4ecf-902c-3b6fb845ab8e">
+          <AttributeID>Base Encounter Cost</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b95ec1ca-fc92-44c9-ab40-e24dc5d44a3f">
+          <AttributeID>Total Claim Cost</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c0f548e-8b26-49c5-81ce-d65e4d6a792c">
+          <AttributeID>Payer Coverage</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8812d67a-00e6-400d-8c85-af1ccb85e655">
+          <AttributeID>Reason Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f7a8a47-a824-48d6-a102-972ab57c104d">
+          <AttributeID>Reason Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7111784-fa27-4299-a12a-dd096573211a">
+          <AttributeID>Remaining Claim Amount</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1424c75c-ab5e-4d94-bc30-b21dd352f5f0">
+          <AttributeID>Additinal Charge</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="75a2a064-3b89-4165-a715-bb7c0820b82b">
+          <AttributeID>Total Coverage Ratio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b995e9c4-7c71-468f-ba68-b587f59a5150">
+          <AttributeID>Accm Txn Create Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce47628b-13f6-4c36-a80a-efec910e37af">
+          <AttributeID>Accm Txn Complete Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="df234c68-73e4-40e7-8137-615299bd5b0b">
+          <AttributeID>Txn Process Time Hours</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04bdce49-9f6c-4c08-a386-1d6f3b88c630">
+          <AttributeID>Insert Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="19e50238-4cbe-4bd0-b254-63af7d13a52a">
+          <AttributeID>Modified Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d25e8812-9981-42dc-9d24-66de51939466">
+      <ID>Stop</ID>
+      <Name>Stop</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7210f6ec-058e-4794-876f-8fee2dd9ae55">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1fd86fa9-9e48-4c48-888a-cabf1413ec31">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c05ad752-0752-456f-9651-a52855743aee">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87dc526d-e1a7-493b-a818-1246058dbd51">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b515549d-e583-47a8-b6df-a1405bf64ad7">
+          <AttributeID>Full Date UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a0179d7-3667-4f1d-95ea-656bd82c2f31">
+          <AttributeID>Full Date USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="029c656a-2d9f-42d2-b5af-0efd6f875929">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94596294-27d1-4a43-b4d0-ddcc615b7e1e">
+          <AttributeID>Day Suffix</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27171856-307d-4b4b-81af-729012d8cea8">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a62e6481-c8ef-41c3-ac57-9906333c437e">
+          <AttributeID>Day Of Week USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a55bff7-f107-44d7-8a65-d2f3a1969836">
+          <AttributeID>Day Of Week UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="725bb204-3bdb-4caf-9930-1fc569f39667">
+          <AttributeID>Day Of Week In Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47f0c5bd-4577-491c-89d5-993a6ef89224">
+          <AttributeID>Day Of Week In Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d821f16-83ee-4ea5-ba89-29ce6c6e6188">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7f5cf030-e87f-4bea-994d-19597aeef9b6">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ed6ef67-3000-4512-8fee-ef69587d2741">
+          <AttributeID>Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f1599e61-cb22-4b8f-aa12-354a5c9b564b">
+          <AttributeID>Week Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="adcf7387-741c-4670-95c3-c52d65a79b9f">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73a0444c-528b-4dfb-a4ad-fa079176e481">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0472bae0-860b-4da3-b690-9717a890a7ac">
+          <AttributeID>Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="25f068b4-ee5c-49d8-96ea-85e7c68722d4">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83537506-e8ff-4591-a3e0-a4447033a539">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9b3b5c15-9684-4586-9275-001f100ed65a">
+          <AttributeID>Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6b77cd6-9d4c-4827-9417-e4391fe70005">
+          <AttributeID>Month Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="48f545d6-c4d3-416c-8fff-e23cf02d3441">
+          <AttributeID>MMYYYY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d76c289c-8e2d-40af-942e-8d87bdd303e1">
+          <AttributeID>First Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0bb1ad1f-cc92-4d7b-b974-fc424b6dcaec">
+          <AttributeID>Last Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80f2ac5e-b31c-4fc9-93c4-97d2d3b75a69">
+          <AttributeID>First Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31e2222d-a2ed-4d3a-ba6e-e38006173642">
+          <AttributeID>Last Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="50050052-0158-4376-8a3b-0f157232bd2b">
+          <AttributeID>First Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afdc45b0-2ab0-4228-b062-036b431bbbe3">
+          <AttributeID>Last Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2802ac48-5978-494d-b2be-f2eecaa50a77">
+          <AttributeID>Is Holiday SL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0cc5a089-0d03-46ae-86f0-9de4871e48a7">
+          <AttributeID>Is Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d7078ee3-0731-4116-b294-ae0ae0bddbdd">
+          <AttributeID>Holiday SL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="221fceb7-b503-4c3a-9ac5-a6b2fb37ad0b">
+          <AttributeID>Is Current Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1d6d431-4012-4c71-a023-2663bd383806">
+          <AttributeID>Is Data Available</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54108218-d340-4f11-a2bd-9ae493dee1cb">
+          <AttributeID>Is Latest Data Available</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d247d88a-f72f-4adf-ad65-56e3cfe93176">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="33c0066e-0066-4510-b1ac-7d7a2324fe88">
+      <ID>Dim Organizations</ID>
+      <Name>Dim Organizations</Name>
+      <DimensionID>Dim Organizations</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="29598172-e049-44c1-83b5-dd8fc1981494">
+          <AttributeID>Organizations SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="accebbe8-ae97-47d0-b5f8-7da8692ea7f1">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a702953-eb98-44d5-b089-94e26dee08c3">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="06dd884f-8423-44b1-96a0-2a9a0a370c5d">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb45fcaf-bf16-4a94-8c01-cc94d552cb54">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e1ebee0-bd73-4230-bac7-a3e1235bbd3c">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44dd12a8-61d4-4d66-95d2-6abed8e6b52e">
+          <AttributeID>ZIP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d64e4083-921c-4889-b4ae-ad6f6d86672c">
+          <AttributeID>LAT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6149a8c3-5cbc-44d5-9462-15edef23e5f8">
+          <AttributeID>LON</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ae0828d-e0a3-4a3e-a5c9-5f9efd98442e">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45f8e6aa-7371-4833-9a5f-35172c8c5550">
+          <AttributeID>Revenue</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3600bbdf-c6f0-4770-8f38-156f30f09bf6">
+          <AttributeID>Utilization</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4da039c-e9f2-4b40-b3c1-6c025e03feb0">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30e41e0a-8df9-42b7-b9de-d88f62842946">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2742cffb-9cd8-419e-b5fc-d0cdbca79354">
+          <AttributeID>Insert Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c498348f-efaf-4e2e-a80e-be93c732d3cb">
+          <AttributeID>Modified Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="95301a77-2c00-44a8-93cd-5128015bdde0">
+      <ID>Dim Payers</ID>
+      <Name>Dim Payers</Name>
+      <DimensionID>Dim Payers</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="89fb6bcf-7b2a-486e-950a-37715611227e">
+          <AttributeID>Payers SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f336412-01c5-400f-8625-71f280157eac">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="407e5aa8-2b71-4e88-885b-2f9bcf6a6e77">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d971bc39-d57d-4a5f-b1b9-caf4a4f1ff91">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d26db451-91ce-472d-8414-907066c20480">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4da6c26a-7b80-46f8-a166-7f881fb0ef6e">
+          <AttributeID>ZIP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f38ed03d-f954-4ae7-bd9d-d3e89fe42dcf">
+          <AttributeID>Phone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a21bd787-6316-47f3-a4e0-fc2517a37c86">
+          <AttributeID>Revenue</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f72ef390-cfbc-4ba4-8c9d-069aa233d3b9">
+          <AttributeID>Ownership</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24773356-a135-4ada-b9a2-66f551ad06f6">
+          <AttributeID>State Head Quartered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00650200-5fb4-4920-bd04-47b156c15fac">
+          <AttributeID>Amount Covered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d979ddbc-2661-4653-a565-8a5bf067694c">
+          <AttributeID>Amount Uncovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8a1e4ca-6410-443b-b773-3a783683acd1">
+          <AttributeID>Covered Encounters</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54d983ec-e7bf-4196-aa1a-e1b32f5145a3">
+          <AttributeID>Uncovered Encounters</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae6be41a-3c45-4b2b-a484-54461d6b5645">
+          <AttributeID>Covered Medications</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3adc29f5-e66f-40d5-98e7-1a3376fe89a9">
+          <AttributeID>Uncovered Medications</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef5c8ed1-f4ed-4657-bd0c-34e946a0beaf">
+          <AttributeID>Covered Procedures</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e4c2a70-1eef-479d-ab4e-c779bc5be16a">
+          <AttributeID>Uncovered Procedures</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92032e0f-bd4c-484f-b4c6-f3ac5ba37bdd">
+          <AttributeID>Covered Immunizations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b5d640e2-7a47-4e76-8815-0d1fb540c7e3">
+          <AttributeID>Uncovered Immunizations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="07857d43-3a5d-4175-8ac0-08c7544c2b0d">
+          <AttributeID>Unique Customers</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0331c22-96a9-4948-9d9e-5456165b9e23">
+          <AttributeID>QOL Avg</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9508c9c6-e0bf-4352-9e3d-beb41be4645b">
+          <AttributeID>Member Months</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b047ab7f-27bb-43c7-a403-ee93b0ab6c12">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14f2e811-b743-4fa5-b528-b92e3a35db9b">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4cee50b-af68-4d9f-bad7-b3666a1318bc">
+          <AttributeID>Insert Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="beaf9c1d-aec4-463a-80f6-b61981e8d6df">
+          <AttributeID>Modified Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9c5f197c-690f-4c3a-970c-8ef0af0726fa">
+      <ID>Dim Providers</ID>
+      <Name>Dim Providers</Name>
+      <DimensionID>Dim Providers</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a15352d2-ffb1-4734-9d20-91bf0fa32a3f">
+          <AttributeID>Providers SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c5ff243f-2e16-4881-ab5e-e21cc91126f1">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f84e942-6d1d-4e4b-ac9c-712b03894e88">
+          <AttributeID>Organization</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="689ad90c-5fec-425d-afbb-48670d43f2ea">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a216f76-ea9f-4383-9b7b-a662627cb7e2">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b9ac492-517a-4199-b6f2-84d817e5acc0">
+          <AttributeID>Speciality</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12ae297f-6a7a-4bb1-b204-e3ce4cc2bb5b">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0c893a56-30e4-4f74-b05f-537d24478b41">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="343c0b7f-1f40-49ea-a9d0-f4014d4a9a5a">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="235232b4-8bed-4a9b-ab3b-fee3b3b9172e">
+          <AttributeID>ZIP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e009ac93-e74b-4179-85d0-b28d96ed905b">
+          <AttributeID>LAT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00456237-5ba0-4d53-bcde-9c9a79309d54">
+          <AttributeID>LON</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c37276da-fdea-4363-b3fc-23c34a989757">
+          <AttributeID>Encounters</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9254357b-a736-4422-84c4-efc0682801d8">
+          <AttributeID>Procedures</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a34ee08-1ef7-4dc8-af4e-fade917bef56">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f82d8a0-b5a1-4ef3-867e-184d8d51217c">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ce0e160-2734-42c9-94c0-4968cad103b6">
+          <AttributeID>Insert Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6d18446-f69d-467e-ad53-275d067286d0">
+          <AttributeID>Modified Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ff5019d5-a02e-403c-9d0b-cbdfbc90096f">
+      <ID>Dim Patients</ID>
+      <Name>Dim Patients</Name>
+      <DimensionID>Dim Patients</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e88a4a76-15c0-4d02-8d12-637468a055cb">
+          <AttributeID>Patients SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9c01c94-45d7-4308-94d0-71b4997d75d5">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd6a22ae-6323-41a5-b1d3-d8d05c1e7e8f">
+          <AttributeID>Birth Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14860fe7-0d01-441a-a86b-43076557e8c9">
+          <AttributeID>Death Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55b6a96b-7da9-4fd1-b11b-a90e7d3b7af2">
+          <AttributeID>SSN</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47b2f362-b88c-48e6-89bd-cb9821f8c791">
+          <AttributeID>Drivers</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e9ad1dc-79f8-4f59-a73c-359fee268d31">
+          <AttributeID>Passport</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20020769-f605-4db8-b3a4-1344b7045a46">
+          <AttributeID>Prefix</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4980e431-6032-4930-a84b-3ff8de0d618d">
+          <AttributeID>First</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca1689b9-3744-420e-bf49-bd2c3bc3afd2">
+          <AttributeID>Middle</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ed89298-8ea7-4074-b55b-b2b92892e907">
+          <AttributeID>Last</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2aab278e-749e-47bb-83ea-480bb08f586d">
+          <AttributeID>Suffix</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="af62bb0f-51fe-454f-9b42-6e7e490d9658">
+          <AttributeID>Maiden</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e35f015e-cb6e-4fdf-a3c1-e1d92c192227">
+          <AttributeID>Marital</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3767d774-2d13-4187-a7a3-8b6b7ee9277d">
+          <AttributeID>Race</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26e00733-bdf2-4991-a2d9-0a45b52649ec">
+          <AttributeID>Ethnicity</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1158baa7-ee63-477f-a64f-8acfe8e9e50b">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80a29bd4-6a0c-4af8-bc95-79649cb6ea07">
+          <AttributeID>Birth Place</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fec6b5f-3fc7-4212-9584-5c6e5796753c">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="71824e93-0ef0-4d4f-9587-900ba4bcafca">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8987185a-f78f-4424-9070-72b08388a90c">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80dd45ab-230f-4ba7-836f-3d0e3c29ddea">
+          <AttributeID>County</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a4a3b44-cdd9-4bbf-a928-c70861845bc7">
+          <AttributeID>FIPS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e14ac8a-b335-4ab7-abde-7620d8569738">
+          <AttributeID>ZIP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e301ff4-7bb6-4805-80cf-1111c9fb4f1e">
+          <AttributeID>LAT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5220df4-7d5f-4155-aa81-73567c8a1dfd">
+          <AttributeID>LON</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a110a01-791c-4bc5-83a5-3b6890ca462b">
+          <AttributeID>Health Care Expenses</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c1a1b95-d8d6-4d3d-880a-3f309f2a71b0">
+          <AttributeID>Health Care Coverage</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cdd08048-56e1-4f07-b1e3-0df6ad2fcad7">
+          <AttributeID>Income</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55a8d2d8-8b0b-4ab7-8a4b-04e0988e5a16">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="200ec2d6-f472-448b-92c7-815191cd5186">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5277a31-9270-4054-b38d-4b0a63d5d887">
+          <AttributeID>Insert Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3048ad11-c346-4974-9c58-49d8859fc058">
+          <AttributeID>Modified Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="57483eba-454b-432b-8c8d-254677977490">
+      <ID>Start</ID>
+      <Name>Start</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5617706a-7543-4497-b2ea-5b6bd0a6056d">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1382a435-afa2-4abb-9b55-b5902b86ae7c">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43122c78-7ab2-41d8-858e-4526651be4fe">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c8c8b9f-a00d-4c84-a02c-8149ed255250">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9a6ab6c-8ab5-4c39-a175-4450c4f6bd29">
+          <AttributeID>Full Date UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77671a1c-c11a-425c-bb4a-359f8539c4e6">
+          <AttributeID>Full Date USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="98ea9139-b595-4cf7-974a-e3ff5382e395">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3a23dfa-e95d-4a41-bc0a-ef50faf6cf5f">
+          <AttributeID>Day Suffix</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="336f47e1-4c8a-4009-8213-7a0989ae3858">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5b55962-ecff-48e7-abad-cdb21c70f65e">
+          <AttributeID>Day Of Week USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9cb944ca-851e-453f-be61-bd0ec3c738a5">
+          <AttributeID>Day Of Week UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b017657-4e8b-4dec-ad31-cfc9a1bd6d24">
+          <AttributeID>Day Of Week In Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2404023-82f0-45e2-91e3-5d24c981c9fe">
+          <AttributeID>Day Of Week In Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="74a24abd-022d-42a4-9178-637688084a8b">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7ddc581-007f-416e-a6e7-d99137abe552">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7bf9601f-5375-42c5-81d5-94581b595e8f">
+          <AttributeID>Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="928f643c-5f04-4971-b9dd-92ce89cb7bb4">
+          <AttributeID>Week Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed433019-3262-49b5-9fa0-1c00a88de557">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76dafd22-ec8d-4698-b88e-9f3a4147b69f">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce56375a-c13a-450a-8f47-c700073bcfe4">
+          <AttributeID>Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="089f4822-73b4-4316-b4aa-13ecace9fbbc">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f297a205-ea9a-4a9b-aee7-a2526e0fecec">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77862496-6a19-4ab6-98bf-17ca6515c3c8">
+          <AttributeID>Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d99de6fc-3409-4aea-a618-92171ab8a56f">
+          <AttributeID>Month Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="67ddcb5e-b69f-4b38-9cfc-ddb6b8ed0134">
+          <AttributeID>MMYYYY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17fd8a1a-3dbb-4594-b59e-b2bc20f235ff">
+          <AttributeID>First Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16c52386-994d-42d7-990d-58b696fb30d5">
+          <AttributeID>Last Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ec75539-0b86-41f2-87ae-3364d79ed75d">
+          <AttributeID>First Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21e59ec3-b440-40f4-82be-9545d932aa4c">
+          <AttributeID>Last Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ed34cb5-41c0-4758-8910-dc634bbb8ff1">
+          <AttributeID>First Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab99ea43-c437-4eb5-966c-d1ccc12f4c7b">
+          <AttributeID>Last Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39af0bb5-4448-4686-bec8-cad36e362d14">
+          <AttributeID>Is Holiday SL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3acfd3f8-deaf-4520-8f14-122e3cdf5f2e">
+          <AttributeID>Is Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce69c1c2-4a28-4134-a8b8-8c191ba7fe74">
+          <AttributeID>Holiday SL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53b11b54-0d1b-460f-91d6-ef20ebdd9aeb">
+          <AttributeID>Is Current Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ebf38d78-70c4-44c9-8615-f407e9ebe6ba">
+          <AttributeID>Is Data Available</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1861b8a-557f-4786-9455-5c3761dc1694">
+          <AttributeID>Is Latest Data Available</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7852bb68-8797-4764-8f62-63d872e10825">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d3f8f521-8abf-4ae6-a35d-05ef853980f5">
+      <ID>Facts Encounters</ID>
+      <Name>Facts Encounters</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2dfba9c7-d411-430b-abd8-4b1364ea9d72">
+          <ID>Code</ID>
+          <Name>Code</Name>
+          <Source dwd:design-time-name="6439ef66-2e7f-4b5d-b09a-036ba188a48c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b2bc4c3a-b2a4-4608-9488-dacab7be0cd7">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>Code</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7bd95bec-fea1-48c9-a975-2c92be505d77">
+          <ID>Base Encounter Cost</ID>
+          <Name>Base Encounter Cost</Name>
+          <Source dwd:design-time-name="24b59a84-cd85-4f06-ae75-dc055a437ed3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5131e7f5-f355-4f40-ad03-005ccfdb3abc">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>BaseEncounterCost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="31849ea1-3cc8-424a-a29d-7af89ca012de">
+          <ID>Total Claim Cost</ID>
+          <Name>Total Claim Cost</Name>
+          <Source dwd:design-time-name="231eb757-3622-4d54-94d2-117188f31bfa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b5c2c42e-6e8f-40ea-b95c-0b3ae8e94fea">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>TotalClaimCost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d43a46e1-97d6-4d92-99cb-060d132dacd8">
+          <ID>Payer Coverage</ID>
+          <Name>Payer Coverage</Name>
+          <Source dwd:design-time-name="ec01eabd-d5e5-4735-b60e-aa0cd47a9f6a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2150f8de-e447-49b7-b96f-5e9458050c38">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>PayerCoverage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a94b2ff4-d9b8-4f4a-ab15-22bdc0d439bc">
+          <ID>Reason Code</ID>
+          <Name>Reason Code</Name>
+          <Source dwd:design-time-name="0c4e41e8-1058-4d4b-ba7a-de06f2aae551">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c1acbee8-b722-4396-ad21-875d95cccf82">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>ReasonCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="154381e1-e9e7-4f27-bc82-7c3019490957">
+          <ID>Remaining Claim Amount</ID>
+          <Name>Remaining Claim Amount</Name>
+          <Source dwd:design-time-name="24e9594b-7fa0-4e33-9360-3760035aa104">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="23c7cf69-6461-4e2b-8441-85e3a2788964">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>RemainingClaimAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8eeb07a6-29b8-42f2-b0fc-e9d2f645444a">
+          <ID>Additinal Charge</ID>
+          <Name>Additinal Charge</Name>
+          <Source dwd:design-time-name="94231ee9-1138-4e01-ae85-a9a0c7d13f7f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="54e84aff-2ff6-4ab8-b151-3a22b3b7d957">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>AdditinalCharge</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="26d57717-995f-4ba3-9a7b-cb6ee8048d0b">
+          <ID>Total Coverage Ratio</ID>
+          <Name>Total Coverage Ratio</Name>
+          <Source dwd:design-time-name="eac0870f-e00b-4d44-9e76-1a783d90ccd3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5ece0f4a-5bde-4b2a-97ea-6d069448d27d">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>TotalCoverageRatio</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="32542e57-408d-47b7-bae7-89d39f1dadc5">
+          <ID>Txn Process Time Hours</ID>
+          <Name>Txn Process Time Hours</Name>
+          <Source dwd:design-time-name="e9606054-2bb4-4d52-827c-12aeccaad625">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a2583c3-67d3-4347-b5cc-bdb83bdec1d3">
+              <TableID>dbo_FactsEncounters</TableID>
+              <ColumnID>txn_process_time_hours</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ee4b60e3-9d6f-471e-b69a-212c9ab0b19f">
+          <ID>Facts Encounters Count</ID>
+          <Name>Facts Encounters Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0eaceed7-f6fe-4214-8555-b79e7e882a49">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="798ca2c3-01e4-4d38-91c3-f2e041efb426">
+              <TableID>dbo_FactsEncounters</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="c7750d57-3763-4e75-85ac-47633bc5684d">
+          <CubeDimensionID>Facts Encounters</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="30f0c538-a113-48fb-8389-56efcc560b4e">
+              <AttributeID>Encounter SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="20e9e94f-d7c1-4c6a-bbee-d607cd72ed50">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cf583587-c3a7-4320-8aa0-ceb3ccd8c51c">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>EncounterSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2a7c6e37-d704-473c-bc8a-b928fb5e65ce">
+          <CubeDimensionID>Stop</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f793543-3109-45b2-9d5e-0cd4f75c553b">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dd357f7d-b4ea-4277-82f5-16038dba2dd0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ffcb305-f08f-48a1-b3d5-b8a3cd150c64">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>StopKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d7f43b0-1a8d-49ae-a3b3-54c3c32cb455">
+          <CubeDimensionID>Dim Organizations</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0f42348c-75f6-47a9-bab3-dca5c48ab3a2">
+              <AttributeID>Organizations SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a24a3ed-5266-444e-a661-46ce0b846cab">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d7ca26f6-a7ce-4271-b5ff-ad7be2d8ff7b">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>OrganizationsSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07e7dac2-4e08-48cf-bbf7-96124d489595">
+          <CubeDimensionID>Dim Payers</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fad80eef-f65f-4e4e-85d6-a8a245cb9d2f">
+              <AttributeID>Payers SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9b9a3103-67cb-4cb9-b78e-377410cd0a85">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e56d48bb-af21-4397-b9f5-7c0315b3ecd7">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>PayersSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f051ed1f-df9c-4a80-827d-06974522dc29">
+          <CubeDimensionID>Dim Providers</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="67bd68ec-3530-4f69-ba3f-d9619548f4c6">
+              <AttributeID>Providers SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c712c593-9b41-46c1-b4f5-98739205e6c7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d37ca5d2-694b-4a89-b5ca-ea42e2d5e770">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>ProvidersSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5c823651-b08d-4d8c-bf9a-440a7f118c83">
+          <CubeDimensionID>Dim Patients</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8aa913fe-52cb-4c55-be62-c5b459129e10">
+              <AttributeID>Patients SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2c79daf5-e33a-4d0c-a4f5-1a158e7ff43b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48d53263-5957-4bda-8aa4-fc2474c60ef0">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>PatientsSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="39bd8664-7c74-436a-8d58-ba52d162c25c">
+          <CubeDimensionID>Start</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8fc9da0a-120c-4ae7-9407-fb50ed114833">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75450af6-f2d9-478f-8849-ff06fad62a9a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e952b33d-9c1e-470d-af9d-aa7bff39e9a5">
+                    <TableID>dbo_FactsEncounters</TableID>
+                    <ColumnID>StartKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="120fc390-6e0c-4243-b9b6-5d36d3308e6d">
+    <DataSourceViewID>DSV_Medical_DW</DataSourceViewID>
+  </Source>
+  <Kpis>
+    <Kpi dwd:design-time-name="66891f02-3c18-4756-8974-3a2eb896d6e7">
+      <ID>KPI</ID>
+      <Name>Remaining Claim Amount KPI</Name>
+      <AssociatedMeasureGroupID>Facts Encounters</AssociatedMeasureGroupID>
+      <Value>[Measures].[Remaining Claim Amount]</Value>
+      <Goal>[Measures].[Remaining Claim Amount]</Goal>
+      <Trend>[Measures].[Remaining Claim Amount] &gt; 5000</Trend>
+      <TrendGraphic>Status Arrow - Ascending</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

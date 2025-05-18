@@ -1,0 +1,733 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b3eee37f-3b0d-474b-886e-d6363e542969" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Patients</ID>
+  <Name>Dim Patients</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1006" scrolltop="-2612" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5927" y="10224" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPatients" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3874" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000220f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPatients" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1006</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2612</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d7b090a5-aeae-4d73-8f54-fc6c651d1c41">
+    <DataSourceViewID>DSV_Medical_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="0eeff0b7-ad9d-4b2e-95d4-f29accf9e205">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1ed2fb5c-7133-41ac-9e0c-43b57d3078e3">
+      <ID>Patients SK</ID>
+      <Name>Patients SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80d0eea9-b1d6-486a-a63c-f5f417d0faaa">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c872b8eb-f0b8-4f24-a0cd-ca7beede6952">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>PatientsSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="84d3d9b9-e683-4dda-b994-ac971b4abe56">
+          <AttributeID>Id</AttributeID>
+          <Name>Id_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3ec7a916-7222-496d-bbc7-ba54ecba0543">
+          <AttributeID>Birth Date</AttributeID>
+          <Name>Birth Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c77bac3-ab45-4cb0-a469-0652eef53a33">
+          <AttributeID>Death Date</AttributeID>
+          <Name>Death Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="17b2d928-fdbe-46b7-ba2c-555a0a267f38">
+          <AttributeID>SSN</AttributeID>
+          <Name>SSN</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="056998cf-6c12-495b-9438-7d1f9b539bdc">
+          <AttributeID>Drivers</AttributeID>
+          <Name>Drivers</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="df361fd2-691b-47b0-8d50-44750ebbc7c5">
+          <AttributeID>Passport</AttributeID>
+          <Name>Passport</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2a377a9-fe20-45ed-a904-e5149d3290b9">
+          <AttributeID>Prefix</AttributeID>
+          <Name>Prefix</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ec10952-2f42-4770-af96-9d3f19fd0a5b">
+          <AttributeID>First</AttributeID>
+          <Name>First</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="422f5c91-ecf4-4012-970e-954db5db9729">
+          <AttributeID>Middle</AttributeID>
+          <Name>Middle</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6eaceb6e-4409-4940-a6dd-5d0036fdecfa">
+          <AttributeID>Last</AttributeID>
+          <Name>Last</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3afe2bea-b3f2-4154-af81-a2b1ad79a24c">
+          <AttributeID>Suffix</AttributeID>
+          <Name>Suffix</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8304745d-69fd-464b-9921-42fc2b918268">
+          <AttributeID>Maiden</AttributeID>
+          <Name>Maiden</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2004ffea-9fb3-4f42-b92d-7b2db362507e">
+          <AttributeID>Marital</AttributeID>
+          <Name>Marital</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aae4cf16-23a3-4dfc-b30c-80dcc9d69f5a">
+          <AttributeID>Race</AttributeID>
+          <Name>Race</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6377ed7d-6aed-4298-9ab0-fb8b2c2c4df5">
+          <AttributeID>Ethnicity</AttributeID>
+          <Name>Ethnicity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fab59295-13b4-4a10-98d8-d240daee8ea7">
+          <AttributeID>Gender</AttributeID>
+          <Name>Gender</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c4ab155c-ff73-4adf-a566-1926b842dc41">
+          <AttributeID>Birth Place</AttributeID>
+          <Name>Birth Place</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b560facd-0070-47d4-98a8-46ece60a8b59">
+          <AttributeID>Address</AttributeID>
+          <Name>Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee639f8b-a74b-4147-ac8c-08f4102bb1b5">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="900a30a6-a8c7-4797-bd01-dde6b1ca77cb">
+          <AttributeID>State</AttributeID>
+          <Name>State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d14dbb4a-45ae-4c89-9063-c6e1a7b1dae3">
+          <AttributeID>County</AttributeID>
+          <Name>County</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cc59b631-bcf3-4a23-8b66-e582c745d2ce">
+          <AttributeID>FIPS</AttributeID>
+          <Name>FIPS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5cc89c56-cfd0-4c84-ac9d-9007fd9ec1e3">
+          <AttributeID>ZIP</AttributeID>
+          <Name>ZIP</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2dbaa05-2bb3-49ec-a20e-a46e4b11d951">
+          <AttributeID>LAT</AttributeID>
+          <Name>LAT</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="937bec4c-187b-4996-b24f-116a516c0354">
+          <AttributeID>LON</AttributeID>
+          <Name>LON</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c95fe6b-0c50-4c78-bc8c-b987f46d7e5f">
+          <AttributeID>Health Care Expenses</AttributeID>
+          <Name>Health Care Expenses</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6003d0e3-5f42-497f-951f-6658deb1510a">
+          <AttributeID>Health Care Coverage</AttributeID>
+          <Name>Health Care Coverage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ceb150b7-e5df-4d4d-982c-4615b9b35e5c">
+          <AttributeID>Income</AttributeID>
+          <Name>Income</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1e6b70c-be35-4b49-a2c2-ca76d38ae8b8">
+          <AttributeID>Start Date</AttributeID>
+          <Name>Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd5b72a2-0dd4-4266-bce1-58818f647fb7">
+          <AttributeID>End Date</AttributeID>
+          <Name>End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c3b6b5ac-425e-4f7d-bb69-7c717061c6b4">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8e0b518-e5a5-4c74-af57-b5e3daf3725f">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54c07b2f-a641-4c1f-b24b-83ce590a73ad">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52f0648b-2add-4258-95c5-f21eaf188cd7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dfeac3f8-09e9-498f-87cd-9670424d1b5d">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ff8f85d7-07e8-4cf6-8946-17a452df7c0c">
+      <ID>Birth Date</ID>
+      <Name>Birth Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d89ff158-b10a-4c4d-bb7b-9937ba77d835">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1468dd0c-2e06-499f-9f77-d5247d04c9d6">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>BirthDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f7344fa-f6bc-4f30-b139-c5c15f294686">
+      <ID>Death Date</ID>
+      <Name>Death Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2aa5cce8-753e-4997-a252-b0c08a091fed">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19370413-b54e-4c14-8ebf-d3bbd6a14a7e">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>DeathDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="160a1ab7-d638-4186-8b8c-a6e62c5b96cb">
+      <ID>SSN</ID>
+      <Name>SSN</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d8e4701-8bb1-4177-8aa2-08202974fa43">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04729c8f-811c-4225-aebc-4e750f54c358">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>SSN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="86756786-50f3-4924-bbf3-18560118459a">
+      <ID>Drivers</ID>
+      <Name>Drivers</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dfa14f16-fda9-4ce0-8461-c3fecb4bc510">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dad40500-b785-47c2-aed9-0b94db035756">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Drivers</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d17efa89-0137-439f-8f6b-366aa4380696">
+      <ID>Passport</ID>
+      <Name>Passport</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f070d481-10b2-40a6-89bd-7422ad527603">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93b9fb1f-64d4-41f1-8564-39e59febc1f2">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Passport</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d6813e8-b049-43e7-b32f-3217369d8407">
+      <ID>Prefix</ID>
+      <Name>Prefix</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90bc435d-80af-498d-8af3-39046f83a177">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a25aff1-0232-437d-9991-05dce3c9dc58">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Prefix</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="adf1ddf9-b417-4e9f-9465-86053c9a4d93">
+      <ID>First</ID>
+      <Name>First</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e96b6c21-06ca-4f21-b259-d1304d20fcd6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1491f45-15ae-4c6d-9195-2d7640c5971f">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>First</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a8f103c-1a47-439c-9134-6874e22ba2a7">
+      <ID>Middle</ID>
+      <Name>Middle</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="88da419d-13f3-4289-91d2-3240cbe6e8cb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37853af0-7c54-41af-aeef-01617edfe49e">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Middle</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="366fbfd4-9c2f-4142-8c14-e5ef07f9ac7f">
+      <ID>Last</ID>
+      <Name>Last</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0f04e37-a378-4045-8744-27520165a671">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3898ba35-4a6a-4532-a1b3-dc6878e95593">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Last</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="56a3a6de-59f8-4f4d-93d8-435424c79de4">
+      <ID>Suffix</ID>
+      <Name>Suffix</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63632d8a-8233-41f5-a6dc-a5f39ff8e235">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e9c6b68-3215-4737-bb3e-3274ef5118a3">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Suffix</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="404138e5-82c2-41e6-9a6e-50032b9d6d97">
+      <ID>Maiden</ID>
+      <Name>Maiden</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c1837117-246b-48e5-8722-b6d782335a4c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88f86e81-85d5-4c19-9e4e-23af9c055546">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Maiden</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a0e675e-cc5b-4fb1-918f-5b41c2e3b565">
+      <ID>Marital</ID>
+      <Name>Marital</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="faea8847-9712-47c7-83e6-a12ee8d1d1c9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8401f97b-57a9-4829-bb4c-6b9f8b93d5d9">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Marital</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="556f4971-f139-4e5a-97f7-ecc43f2fde26">
+      <ID>Race</ID>
+      <Name>Race</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="163965bc-43ed-48b5-bc03-2e1f46cfc0d8">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1a3e0ba-307b-4fbb-bab2-aab2d93e3009">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Race</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b4e71d0-5594-49ce-82d2-a3547b1ca57b">
+      <ID>Ethnicity</ID>
+      <Name>Ethnicity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd4d9020-00d8-40c8-ab43-eb0c217581ab">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b2c903f-5cd5-4f36-835e-e82e090832a7">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Ethnicity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0c04f5f3-0f24-4f4c-bd70-4c2775d0221f">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30bc19fb-d694-472e-8782-dbb3244dc50f">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e632bd07-a587-48d2-8c98-2e464392c937">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cf7a420-ac91-4f2e-98a5-ea4d1b505d04">
+      <ID>Birth Place</ID>
+      <Name>Birth Place</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="76ba05db-c17a-4f35-b873-554b6a71d2f1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20c65511-4bf3-4ef4-8f51-e356566b413f">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>BirthPlace</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="55575ced-43dd-42dc-8a77-06664527e915">
+      <ID>Address</ID>
+      <Name>Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="828336c2-14bc-4c0d-8048-566daf461394">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a85d6c16-bd23-4308-a387-e2d5ece19fe4">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Address</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe270f9b-1193-4894-9140-481ab03ab614">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f4fc60d3-e3c4-41d6-810d-44b3d2b9226c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f2dac21-d7b0-44ed-9dd4-8e98129cd60f">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="23409109-4275-4075-8d8d-515707e33fee">
+      <ID>State</ID>
+      <Name>State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="031b553d-e655-48f0-8a0f-4b8e6052013d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32b97f3b-ea0e-4687-9a5f-5a6499af7e08">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>State</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1c0b7325-1fbe-404a-a300-a282e5c96f91">
+      <ID>County</ID>
+      <Name>County</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29aa6315-e20b-4229-8dc5-edd314d2192f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c7e1f63-2266-4113-8ef1-0b452cdcb9f9">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>County</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ca5b9e2-bcd2-4cee-b890-5c940fe052dc">
+      <ID>FIPS</ID>
+      <Name>FIPS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c04597d-7550-45a6-acc0-b449b8dd717e">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99825d00-d67d-432a-9fe7-1d97072a2040">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>FIPS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f104c57-2b29-4716-8d89-9b6cec0b8987">
+      <ID>ZIP</ID>
+      <Name>ZIP</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d84c34a-71f3-480c-801c-0583d5bcf3d3">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c54aa2af-9ef4-4f50-8306-e5281019e6f4">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>ZIP</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0bd1b218-2414-4d39-a1b9-0c3e4b5470ab">
+      <ID>LAT</ID>
+      <Name>LAT</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97193de8-0099-4d85-b012-152fa4ccebfe">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f021d37f-ae06-4650-9650-64af7c891660">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>LAT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b400fed7-5acd-4a94-a64e-84ff7433083b">
+      <ID>LON</ID>
+      <Name>LON</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a08e67e4-a1c6-4905-8ad0-7eaf5f72e63a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc7d46a3-8e0b-4b24-be13-d5cc60ab6058">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>LON</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad29d82a-2037-4855-9161-76aca66cdc7c">
+      <ID>Health Care Expenses</ID>
+      <Name>Health Care Expenses</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d17c51b8-e96c-4ef4-9d3f-f881f6be414d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e56a9f10-e9de-4484-943e-001652b5e973">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>HealthCareExpenses</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52992908-f151-4328-9455-8fc907cbeaa3">
+      <ID>Health Care Coverage</ID>
+      <Name>Health Care Coverage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23c9872d-4c04-4740-b01c-622a6a180367">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb388065-845c-4acf-9685-134b6a61596c">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>HealthCareCoverage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61f1cd08-fde8-4cdb-861a-4737300c44aa">
+      <ID>Income</ID>
+      <Name>Income</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e7ac26c-74e1-4cf5-a6cd-5716a444e515">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a24a33b-d05c-4c15-abb8-c69dcd2d26b4">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>Income</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1093ecd8-c20f-4699-9130-bfd6059f6b39">
+      <ID>Start Date</ID>
+      <Name>Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c288894-74d0-4258-a7b0-4709d10c9288">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67f8ad0b-29e6-47d5-859c-7f7308e42b79">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e3d806b5-0c6f-4f11-8b41-1f90634f2c9b">
+      <ID>End Date</ID>
+      <Name>End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b36003d3-0c1b-4927-998f-ad9383ba037d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee283560-e974-40c4-a5f4-a44786ec0720">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f2edd475-a8fb-4412-a174-08ac67e56e61">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89bda50f-2a8f-40f0-af79-c0fe9dae0980">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="452702a3-dff4-4977-b677-0c8949a1f242">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24216b8e-6b11-4bb0-8c51-923c441c9f22">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63b77c6d-0e5a-4153-a815-dbb1b1a464e0">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8541adae-0dc7-41a3-8057-a4847a282492">
+            <TableID>dbo_DimPatients</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
