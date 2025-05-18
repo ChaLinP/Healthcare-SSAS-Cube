@@ -128,7 +128,7 @@ To work with the cube, restore the provided backup file:
 
 - [Healthcare OLTP to Data Warehouse](https://github.com/ChaLinP/Healthcare-OLTP-to-Data-Warehouse-for-Analytics)
 - [Healthcare SSAS Cube](https://github.com/ChaLinP/Healthcare-SSAS-Cube)
-- [Healthcare SSRS Reports](https://github.com/your-username/healthcare-ssrs)
+- [Healthcare Power BI and Excel Documentation](https://github.com/your-username/healthcare-ssrs)
 
 ---
 
